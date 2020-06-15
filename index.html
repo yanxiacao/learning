@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>炫酷多级下拉导航菜单带左右切换轮播图jQuery插件</title>
+<meta name="keywords" content="炫酷,多级,下拉,导航菜单,左右切换,轮播图,jQuery插件" />
+<meta name="description" content="炫酷多级下拉导航菜单带左右切换轮播图jQuery插件下载。js代码(www.jsdaima.com)" /> 
+<link rel="stylesheet" type="text/css" href="statics/css/nav.css" />
+<link rel="stylesheet" type="text/css" href="statics/css/slider.css" />
+<link rel="stylesheet" type="text/css" href="statics/css/swiper.min.css" />
+<link rel="stylesheet" type="text/css" href="statics/css/animate.min.css" />
+</head>
+
+<body>
+<!--导航开始-->
+<div class="nav">
+	<div id="menu_hover_bg" style="height: 0px; overflow: hidden;"></div>
+	<div class="w1200">
+		<div class="logo">
+			<a href="https://www.jsdaima.com/" target="_blank"><img src="statics/images/logo.png" /></a>
+		</div>
+		<div class="menu">
+			<ul>
+				<li id="men_pro">
+					<h2><a href="#">产品中心</a></h2>
+					<div class="sub_menu">
+						<div class="h30"></div>
+						<div class="sub_menu_list" style="width: 590px;">
+							<h3>开店零售直营系统</h3>
+							<div class="list">
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/wsc.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+											云微商城<span class="pa" style="left:75px;"><img src="statics/images/hot.png" alt=""></span>
+										</h3>
+										<p>
+											28+业务场景，百种营销玩法
+										</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/weshop.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+											微选<span class="pa" style="left:35px;"><img src="statics/images/new.png" alt=""></span>
+										</h3>
+										<p>
+											专注微信电商生态构建，引领电商创新
+										</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/ecshop.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+											ECShop3.6<span class="pa" style="left:75px;"><img src="statics/images/hot.png" alt=""></span>
+										</h3>
+										<p>
+											10年开源网店系统，自定义搭建商城
+										</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/shouyin.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+											门店收银
+										</h3>
+										<p>
+											新零售＋新门店，消费体验无缝衔接
+										</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/ecshop_app.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+											ECShop App<span class="pa" style="left:92px;"><img src="statics/images/hot.png" alt=""></span>
+										</h3>
+										<p>
+											原生商城app，揽超强用户粘性
+										</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/xcx.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+											云小程序
+										</h3>
+										<p>
+											最热移动小程序，5步快速生成
+										</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/shopex.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+											Shopex4.9
+										</h3>
+										<p>
+											经典PC+微信商城，百套模版随心切换
+										</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/ecstore.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+											Ecstore<span class="pa" style="left:55px;"><img src="statics/images/hot.png" alt=""></span>
+										</h3>
+										<p>
+											独立部署商城系统，O2O无缝引流
+										</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/ecmall.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+											Ecmall<span class="pa" style="left:55px;"><img src="statics/images/hot.png" alt=""></span>
+										</h3>
+										<p>
+											开源多用户商城，获多种盈利方式
+										</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/b2b2c.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+											B2B2C
+										</h3>
+										<p>
+											独立部署多用户商城，拥多种业务模式
+										</p>
+									</div>
+								</a>
+
+							</div>
+						</div>
+
+						<div class="sub_menu_list" style="width: 315px;">
+							<h3 class="pl20">订货/分销/批发系统</h3>
+							<div class="list pl20">
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/fxw.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+												分销王
+										</h3>
+										<p>
+											全终端分销平台，PC+手机+微信合一
+										</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/sqws.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+												社群微商
+										</h3>
+										<p>
+											热门移动分销软件，快速引分销流量
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="sub_menu_list" style="width: 295px;">
+							<h3 class="pl20">订货/分销/批发系统</h3>
+							<div class="list pl20">
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/erp.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+												ERP<span class="pa" style="left:35px;"><img src="statics/images/hot.png" alt="">
+										</h3>
+										<p>
+											对接43+平台, 订单库存统一管理
+										</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/hdt.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+												货店通
+										</h3>
+										<p>
+											多平台一键铺货神器，省时便捷
+										</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/crm.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+												会员通
+										</h3>
+										<p>
+											专业电商CRM，更快了解客户
+										</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/taoda.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+												淘打
+										</h3>
+										<p>
+											订单批量打印，对接10+主流平台
+										</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="icon">
+										<img src="statics/images/ysd.png" alt="">
+									</div>
+									<div class="info">
+										<h3>
+												云云收订
+										</h3>
+										<p>
+											对接40+主流平台，订单实时获取
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</li>
+				<li id="men_sol">
+					<h2><a href="#">解决方案</a></h2>
+					<div class="sub_menu sol_left">
+						<div class="h30"></div>
+						<div>
+							<div class="sub_menu_list" style="width: 950px;">
+								<h3>业务场景</h3>
+								<div class="list sol_list">
+									<a href="#">
+										<div class="icon">
+											<img src="statics/images/sol_icon1.png" alt="">
+										</div>
+										<div class="info">
+											<h3>
+												门店/移动/社交/微商
+										</h3>
+											<p>
+												移动/社交/门店业务<br> 帮助企业拓展移动新零售格局
+											</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon">
+											<img src="statics/images/sol_icon2.png" alt="">
+										</div>
+										<div class="info">
+											<h3>
+												门店/移动/社交/微商
+										</h3>
+											<p>
+												移动/社交/门店业务<br> 帮助企业拓展移动新零售格局
+											</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon">
+											<img src="statics/images/sol_icon3.png" alt="">
+										</div>
+										<div class="info">
+											<h3>
+												门店/移动/社交/微商
+										</h3>
+											<p>
+												移动/社交/门店业务<br> 帮助企业拓展移动新零售格局
+											</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon">
+											<img src="statics/images/sol_icon4.png" alt="">
+										</div>
+										<div class="info">
+											<h3>
+												门店/移动/社交/微商
+										</h3>
+											<p>
+												移动/社交/门店业务<br> 帮助企业拓展移动新零售格局
+											</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon">
+											<img src="statics/images/sol_icon5.png" alt="">
+										</div>
+										<div class="info">
+											<h3>
+												门店/移动/社交/微商
+										</h3>
+											<p>
+												移动/社交/门店业务<br> 帮助企业拓展移动新零售格局
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="sub_menu_list" style="width: 220px;">
+								<h3 class="pl20">行业解决方案</h3>
+								<div class="list sol_list pl20">
+									<a href="#">
+										跨境电商解决方案
+									</a>
+									<a href="#">
+										O2O解决方案
+									</a>
+									<a href="#">
+										生鲜电商解决方案
+									</a>
+									<a href="#">
+										女装电商解决方案
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li id="men_fuwu">
+					<h2 class="mr40"><a href="#">服务市场</a><img src="statics/images/ec_icon.png" class="pa"/></h2>
+					<div class="sub_menu">
+						<div class="w1200">
+							<h3>服务市场</h3></div>
+						<div class="sub_menu_list">
+							<div class="category">
+								<ul>
+									<li>热销产品推荐</li>
+									<li>店铺模板/二开/插件定制</li>
+									<li>营销推广流量</li>
+									<li>软件配套服务</li>
+								</ul>
+							</div>
+							<div class="content">
+								<div class="cont_list" style="display: block;">
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon1.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon2.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon3.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon4.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon5.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+								</div>
+								<div class="cont_list">
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon6.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon7.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon8.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+								</div>
+								<div class="cont_list">
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon9.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon10.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon11.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon12.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon13.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon14.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+								</div>
+								<div class="cont_list">
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon15.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon16.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon17.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon18.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+									<a href="#">
+										<div class="icon"><img src="statics/images/fw_icon19.png" /></div>
+										<div class="info">
+											<h3>一键搭建微商城</h3>
+											<p>人气提升+基础设置+模板安装+操作培训，统统帮你搞定</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<h2><a href="#">开源方案</a></h2>
+				</li>
+				<li>
+					<h2><a href="https://www.jsdaima.com/" target="_blank">关于我们</a></h2>
+				</li>
+				<li>
+					<h2><a href="#">合作招募</a></h2>
+				</li>
+			</ul>
+		</div>
+		<div class="login">
+			<a href="#">登陆</a>
+			<a href="#">免费注册</a>
+			<a href="#">商家后台</a>
+		</div>
+	</div>
+</div>
+<!--导航结束-->
+<!--轮播开始-->
+<div class="swiper-banner swiper-container">
+	<div class="swiper-wrapper">
+		<a href="#" class="swiper-slide slide3">
+
+		</a>
+		<a class="swiper-slide slide1" href="#">
+			<div class="w1200">
+				<div class="ani pa sl-left" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s">
+					<div class="pa t1">
+						云微商城
+					</div>
+					<div class="pa t2">
+						一款超会卖货的移动微商城
+					</div>
+					<div class="pa t3">
+						28+新零售业务场景，100种营销玩法，800+开店运营功能
+					</div>
+					<div class="pa btn">
+						立即免费开通
+					</div>
+				</div>
+				<div class="img2 ani pa" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s">
+					<img src="statics/images/banner/wsc.png" alt="">
+				</div>
+			</div>
+		</a>
+		<a href="#" class="swiper-slide slide4">
+
+		</a>
+		<a href="#" class="swiper-slide slide2">
+			<div class="w1200">
+				<div class="ani pa sl-left" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s">
+					<div class="pa t1">
+						微选·微好店
+					</div>
+					<div class="pa t2">
+						和微信十亿用户做买卖
+					</div>
+					<div class="pa t3">
+						基于微信“发现-购物”流量入口
+					</div>
+					<div class="pa btn" style="width:220px;">
+						名额有限，老用户一键升级
+					</div>
+				</div>
+				<div class="img1 ani pa" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s">
+					<img src="statics/images/banner/wx.png" alt="">
+				</div>
+			</div>
+		</a>
+		<a href="#" target="_blank" class="swiper-slide slide5">
+			<div class="w1200">
+				<div class="ani pa sl-left" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s">
+					<div class="pa t1">
+						云云收订
+					</div>
+					<div class="pa t2">
+						多渠道订单实时收集获取
+					</div>
+					<div class="pa t3">
+						支持40+渠道的订单统一抓取，满足个性化需求的API接口开放
+					</div>
+					<div class="pa btn">
+						立即进入
+					</div>
+				</div>
+				<div class="img3 ani pa" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" style="top:0;">
+					<img src="statics/images/banner/ysd.png" alt="">
+				</div>
+			</div>
+		</a>
+	</div>
+	<!-- Add Pagination -->
+	<div class="swiper-pagination swiper-pagination-white"></div>
+	<div class="swiper-nav pa">
+		<ul class="w1200 clearfix">
+			<li id="g1" class="active">
+				<div class="icon">
+					<img src="statics/images/banner/icon3.png" alt="">
+				</div>
+				<div class="info">
+					<div>ECShop</div>
+					<p>12年经典开源网店系统</p>
+				</div>
+			</li>
+			<li id="g2">
+				<div class="icon">
+					<img src="statics/images/banner/icon1.png" alt="">
+				</div>
+				<div class="info">
+					<div>云微商城</div>
+					<p>超会卖货的H5商城</p>
+				</div>
+			</li>
+			<li id="g3">
+				<div class="icon">
+					<img src="statics/images/banner/icon4.png" alt="">
+				</div>
+				<div class="info">
+					<div>ERP</div>
+					<p>订单、库存统一管理</p>
+				</div>
+			</li>
+			<li id="g4">
+				<div class="icon">
+					<img src="statics/images/banner/icon2.png" alt="">
+				</div>
+				<div class="info">
+					<div>入驻微选</div>
+					<p>微信官方电商平台</p>
+				</div>
+			</li>
+			<li id="g5">
+				<div class="icon">
+					<img src="statics/images/banner/icon5.png" alt="">
+				</div>
+				<div class="info">
+					<div>云云收订</div>
+					<p>40+平台对接</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!--轮播结束-->
+<script src="statics/js/jquery.min.js"></script>
+<script src="statics/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="statics/js/swiper.animate.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="statics/js/main.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+
+</html>
